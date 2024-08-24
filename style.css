@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background: url('https://images.unsplash.com/photo-1515330834354-6b6b9d1623f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+    background: url('https://images.unsplash.com/photo-1530497610243-a60e25ccdbf2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDIwfHxidXNpbmVzc3xlbnwwfHx8fDE2MjYwMTQ5Njk&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center/cover;
     color: white;
     height: 100vh;
     display: flex;
@@ -31,12 +31,13 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 20px 50px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    color: #f8a528;
 }
 
 .nav-links {
@@ -57,13 +58,15 @@ nav {
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 20px;
+    animation: fadeIn 2s ease;
 }
 
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 30px;
+    animation: fadeIn 2.5s ease;
 }
 
 .cta {
@@ -73,11 +76,24 @@ nav {
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .cta:hover {
     background-color: #d08823;
+    transform: scale(1.1);
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Services Section */
@@ -85,6 +101,8 @@ nav {
     padding: 50px 20px;
     background-color: white;
     text-align: center;
+    background: url('https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+    color: white;
 }
 
 .services h2 {
@@ -99,7 +117,7 @@ nav {
 }
 
 .service {
-    background-color: #f8a528;
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 20px;
     margin: 10px;
@@ -107,6 +125,12 @@ nav {
     width: 30%;
     min-width: 250px;
     transition: transform 0.3s ease;
+}
+
+.service img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 .service:hover {
@@ -127,6 +151,7 @@ nav {
     background-color: #333;
     color: white;
     text-align: center;
+    background: url('https://images.unsplash.com/photo-1489533119213-66a5cd877091?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
 }
 
 .testimonials h2 {
@@ -141,7 +166,7 @@ nav {
 }
 
 .testimonial {
-    background-color: #444;
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
@@ -163,52 +188,5 @@ nav {
     padding: 50px 20px;
     background-color: white;
     text-align: center;
-}
-
-.contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-input, textarea {
-    width: 100%;
-    max-width: 500px;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-textarea {
-    height: 150px;
-}
-
-button {
-    padding: 10px 25px;
-    background-color: #f8a528;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #d08823;
-}
-
-/* Footer */
-footer {
-    padding: 20px;
-    background-color: #333;
-    color: white;
-    text-align: center;
-}
+    background: url('https://images.unsplash.com/photo-1494319931873-4402641d4758?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+    color:
